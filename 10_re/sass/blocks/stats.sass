@@ -1,0 +1,113 @@
+@import mixins
+
+.stats
+    background-image: url('../img/5_Stats/bgc-stats.jpg')
+    background-repeat: no-repeat
+    
+
+    height: 100vh
+
+    text-align: center
+
+.stats_h1
+    margin: 250px 0 100px 0
+    +stats_h1
+
+.stats_price
+    margin-bottom: 30px
+    +stats_price
+
+.stats_info
+    margin-bottom: 30px
+    +stats_info
+
+.stats_text
+    line-height: 24px
+    margin-bottom: 30px
+    +stats_text
+
+.stats_btn
+    margin: 50px auto
+
+    +stats_btn
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &:hover
+        +main_btn_hover
+
+    a
+        text-decoration: none
+        +stats_btn_a
+        &:hover
+            +main_btn_hover
+
+@media screen and ( max-width: 1024px )
+    .stats
+        height: 70vh
+
+        .row
+            flex-wrap: nowrap
+
+@media screen and ( max-width: 1024px )
+    .stats
+        margin: 900px 0 0 0
+        height: 102vh
+
+@media screen and ( max-width: 414px )
+    .stats
+        margin: 1100px 0 0 0
+        height: 85vh
+    .stats_h1 
+        margin: 70px 0 60px 0
+    .stats_price
+        font-size: 40px
+    .stats_info     
+        font-size: 19px
+    .stats_btn
+        width: 115px
+        height: 50px
+@media screen and (max-width: 320px)
+    .stats 
+        margin: 1130px 0 0 0
+        height: 190vh
+    .stats_h1 
+        font-size: 35px
+    .stats .row 
+        flex-wrap: wrap
+    .stats_btn 
+        margin: 35px auto
+
+
+
+        
+        
+        
+
+
+
+        
+        
+
+        
+             
+       
+        
+
+    
+    
+            
+            
+        
+        
+        
+           
+            
+
+        
+    
+
+
+    
+

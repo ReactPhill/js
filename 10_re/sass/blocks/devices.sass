@@ -1,0 +1,76 @@
+@import mixins
+
+.ipad
+    background-image: url('../img/4_Devices/frame_Devices.png')
+    background-repeat: no-repeat
+    background-position: left top
+
+    height: 100vh
+
+.project
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: start
+
+.project svg
+    font-size: 40px
+    color: #c99f2b
+    margin: 10px 0
+    
+
+.project_h1
+    margin-bottom: 30px
+    +project_h1
+
+.project_h2
+    margin-bottom: 30px
+    +project_h2
+
+.project_h3
+    margin-bottom: 30px
+    +project_h3
+
+.project_p
+    margin-top: 10px
+    margin-bottom: 30px
+    line-height: 24px
+    +project_p
+
+.project_btn
+    margin-bottom: 30px
+    +project_btn
+    &:hover
+        +project_btn_hover
+        
+@media screen and ( max-width: 1024px )
+    .devices
+        height:  100vh
+    
+    .ipad
+        background-position: 85% 0%
+    .col-lg-7
+        height: 755px
+
+    .project
+        justify-content: start
+        margin-top: 110px
+
+    .devices
+        height: 60vh
+
+@media screen and (max-width: 320px)
+    .ipad 
+        background-position: 90% 0%
+    .project
+        margin-top: -10px
+    .project_btn 
+        padding: 20px 90px
+
+
+    
+
+    
+
+           

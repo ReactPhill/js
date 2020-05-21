@@ -1,0 +1,85 @@
+/* Tabs h1*/
+
+.tabs_block h1{
+	display: block;
+	background: #ffe600;
+	width: 9rem;
+	padding: .8rem;
+
+	border-radius: 50px 0 50px 0;
+	box-shadow: 4px 2px .1px #ffd54a;
+
+	text-shadow: 3px 1px .1px #ffc526;
+
+	font-size: 3rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+
+	text-align: start;
+	margin: .5rem 0;
+}
+
+/* Tabs i*/
+
+.tabs_block i{
+	display: block;
+	width: 150px;
+	height: 5px;
+	background: #000000;
+
+	margin: 1rem 0;
+}
+
+/* Tabs*/
+
+.tabs_block{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+    height: 20rem;
+}
+
+.tabs{
+    overflow: hidden;
+}
+
+.tab_head{
+    display: flex;
+}
+
+.tab_head_item{
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+
+.tab_head_item:hover,
+.tab_head_item.active{
+    border-bottom: 1px solid #006bcf;
+    transition-duration: .4s;
+}
+
+.tab_content{
+    position: relative;
+}
+
+.tab_content_item{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+    transform: translateX(100px);
+
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.tab_content_item.active{
+    transition: all 250ms;
+    opacity: 1;
+    transform: translateX(0);
+    position: static;
+}

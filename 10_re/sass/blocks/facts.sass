@@ -1,0 +1,51 @@
+@import mixins
+
+
+.facts
+    background-image: url('../img/5_Stats/bgc-stats.jpg')
+    background-color: #ebecee 
+    background-repeat: no-repeat
+
+    height: 100vh
+
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+
+.facts_price
+    margin: 0 20px
+
+.facts_h1
+    +facts_h1
+.facts_price_cost
+    margin: 50px 0
+    +facts_price
+.facts_price_text
+    margin: 50px 0
+    +facts_info
+.facts_text
+    +facts_text
+
+@media screen and ( max-width: 1024px )
+    .facts
+        height: 40vh
+
+@media screen and ( max-width: 768px )
+    .facts_price_cost 
+        font-size: 60px
+    .footer_block_two 
+        height: 155vh
+@media screen and ( max-width: 414px )
+    .facts 
+        height: 82vh
+
+@media screen and ( max-width: 320px )
+    .facts_price_cost 
+        margin: 15px 0
+    .facts_price_cost 
+        font-size: 40px
+    .facts_price_text 
+        margin: 35px 0
+
+    

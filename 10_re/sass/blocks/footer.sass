@@ -1,0 +1,101 @@
+@import mixins
+
+.footer
+    background-color: #0d0d0d
+
+.footer_block_one
+    background-image: url('../img/10_footer/footer__up.jpg')
+    background-repeat: none
+    background-position: 50%
+    height: 40vh
+
+.footer_block_two
+    background: url('../img/10_footer/footer__down.png')
+    background-repeat: none
+    height: 50vh
+
+    .row
+        margin: 0 10%
+
+    
+
+
+/// block one
+
+.footer_block_one
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.footer_title_one
+    +footer_title_one
+
+.footer_text_one
+    margin: 30px 0
+    +footer_text_one
+
+.footer_btn_one
+    display: flex
+    justify-content: center
+    align-items: center
+    +footer_btn_one
+    a
+        text-decoration: none
+        +footer_btn_one_a
+    
+/// block two
+
+.footer_title_two
+    h2
+        margin-top: 10%
+        +footer_title_two
+.footer_text_two
+    h3
+        line-height: 20px
+        margin-top: 20px
+        +footer_text_two
+.footer_icons
+    margin-top: 20px
+    
+.made
+    margin-top: 20%
+    +made
+
+.block_tex_tab
+    display: flex
+
+.tab_tex_h2
+    margin-top: 30%
+    margin-bottom: 20px
+    +footer_h2_list
+.tab_tex
+    margin-top: 5%
+    +footer_list_two
+
+@media screen and ( max-width: 1024px )
+    .footer_block_one
+        background-position: 55%
+        height: 30vh
+    .footer_block_two
+        height: 40vh
+
+@media screen and ( max-width: 414px )
+    .footer_block_two 
+        height: 150vh
+    .img_blog_left 
+        height: 75vh
+        margin-bottom: 50px
+
+@media screen and ( max-width: 320px )
+    .footer_block_one 
+        height: 55vh
+
+    .footer_block_two 
+        height: 180vh
+
+
+    .img_blog_left 
+        height: 105vh
+    
+    

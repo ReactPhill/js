@@ -1,0 +1,147 @@
+@import mixins
+
+.blog
+    background-color: #e8e9ea
+
+    display: flex
+
+// img //
+
+.img_blog_left
+    background-image: url('../img/6_Blog/blog_1.jpg')
+    background-repeat: no-repeat
+
+    height: 60vh
+    
+    display: flex
+    align-items: center
+    flex-direction: column
+        
+
+    .img_blog_angle
+        display: flex
+        justify-content: center
+        align-items: center
+        align-self: start
+        margin-top: 10px
+
+    .img_blog_title
+        margin: 250px 0 0 0
+        text-align: center
+        line-height: 30px
+    .img_blog_text
+        margin: 30px 0 0 0
+
+.blog_right_img_1
+    background-image: url('../img/6_Blog/blog_2.jpg')
+    background-repeat: no-repeat
+
+    height: 20vh
+
+    h3
+        display: flex
+        justify-content: center
+        align-items: center
+        +img_blog_angle
+        
+.blog_right_img_2
+    background-image: url('../img/6_Blog/blog_4.jpg')
+    background-repeat: no-repeat
+
+    height: 20vh
+
+    h3
+        display: flex
+        justify-content: center
+        align-items: center
+        +img_blog_angle
+
+.blog_right_img_3
+    background-image: url('../img/6_Blog/blog_3.jpg')
+    background-repeat: no-repeat
+
+    height: 20vh
+    display: flex
+
+    h3
+        display: flex
+        justify-content: center
+        align-items: center
+        +img_blog_angle
+
+.blog_right_img_4
+    background-image: url('../img/6_Blog/blog_5.jpg')
+    background-repeat: no-repeat 
+
+    height: 20vh
+
+    h3
+        display: flex
+        justify-content: center
+        align-items: center
+        +img_blog_angle
+
+// text //
+
+.blog_title_h1
+    margin: 80px 0 50px 0
+    +blog_title
+
+.img_blog_angle
+    +img_blog_angle
+
+.img_blog_title
+    h2
+        +img_blog_title
+    
+
+.img_blog_text
+    +img_blog_text
+
+// mini-text
+
+.img_blog_right
+    h3
+        +img_blog_angle
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+.img_mini_blog_text
+    +img_mini_blog_text
+    margin: 10px 0
+
+.blog_btn
+    +blog_btn
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+@media screen and ( max-width: 768px )
+    .blog
+        .container
+            margin-left: 50px
+
+    .blog_title_h1 
+        margin: 40px 0 50px 0
+        
+    .img_mini_blog_text
+        font-size: 13px
+
+    .img_blog_left
+        margin-left: 30px
+
+@media screen and ( max-width: 414px )
+    .img_blog_left  
+        margin-left: -15px
+        background-position: 35% 20%
+    .blog .container 
+        margin-left: 0px
+    .blog_right_img_3
+        background-position: 35% 75%
+    .blog_right_img_1
+        background-position: 25% 80%
+    .blog_right_img_2
+        background-position: 25% 80%

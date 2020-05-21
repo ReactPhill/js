@@ -1,0 +1,25 @@
+@import mixins
+
+.drop
+    display: flex
+    margin: 100px 0
+
+.drop_title
+    +drop_title
+.drop_text
+    +drop_text
+.drop_blok_h3
+    h3
+        +drop_info_title
+.drop_blok_p
+    p
+        +drop_info_text
+
+
+@media screen and (max-width: 320px)
+.drop_text
+    margin: 30px 0
+    
+    
+
+    

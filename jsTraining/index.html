@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JS Тренировка</title>
+</head>
+
+<body>
+   <div class="wrapper">
+
+     <!-- Slider -->
+     <section class="slider_block">
+        <h1>Slider JS</h1>
+        <i></i>
+        <div class="slider">
+            <div class="slider_container">
+                <img src="./img/slider/slideOne.png" class="slider_img fade" alt="slide picture">
+            </div>
+        </div>
+
+        <div class="slider_controls">
+            <button class="slider_nav_left slider_nav"  onclick="slide(-1)"><span class="minus">-</span></button>
+            <button class="slider_nav_right slider_nav" onclick="slide(1)"><span class="plus">+</span></button>
+        </div>
+    </section>
+    <!-- End-Slider -->
+
+    <!-- Modal window -->
+    <section class="modal_window_block">
+        <h1>Modal window</h1>
+        <i></i>
+        <div class="modal_window">
+            <button class="open_button" id="id_open_button">Open model</button>
+        </div>
+
+        <div class="modal" id="id_modal">
+            <div class="modal_content">
+                <span class="modal_close">&times;</span>
+                <h2>Modal window</h2>
+                <i></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    Eaque corporis beatae iste fugiat eos libero illo at veniam nemo molestiae?</p>
+            </div>
+        </div>
+    </section>
+    <!-- End-Modal window -->
+
+    <!-- Tabs -->
+    <section class="tabs_block">
+        <h1>Tabs</h1>
+        <i></i>
+        <div class="tabs">
+            <div class="tab_head">
+                <div class="tab_head_item active">Tab 1</div>
+                <div class="tab_head_item">Tab 2</div>
+                <div class="tab_head_item">Tab 3</div>
+                <div class="tab_head_item">Tab 4</div>
+            </div>
+            <div class="tab_content">
+                <div class="tab_content_item active">Content 1</div>
+                <div class="tab_content_item">Content 2</div>
+                <div class="tab_content_item">Content 3</div>
+                <div class="tab_content_item">Content 4</div>
+            </div>
+        </div>
+    </section>
+    <!-- End-Tabs -->
+
+   </div>
+
+
+    
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/modal_window.js"></script>
+    <script src="./js/tabs.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+@import mixins
+
+.brand
+    display: flex
+    justify-content: center
+    align-items: center
+
+    margin: 130px 0
+
+.brand
+    img
+        margin: 0 50px
+
+.brand_title
+    margin-bottom: 30px
+    text-align: center
+    +brand_title
+    
+.brand_text
+    margin-bottom: 30px
+    text-align: center
+    +brand_text
+
+.brand_img
+    margin: 60px 0 
+
+.brand_autor
+    margin-bottom: 5px 
+    +brand_by
+
+.brand_ink
+    +brand_ink
+
+@media screen and ( max-width: 1920px )
+    .brand_by
+        margin-left: 20%
+
+@media screen and ( max-width: 1024px )
+    .brand_by
+        margin-left: 15%
+    
+    .brand img
+         margin: 0 30px
+
+@media screen and ( max-width: 768px )
+    
+    .brand img
+         margin: 0 20px
